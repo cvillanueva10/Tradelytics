@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060E8149B3408141A059A5F0 /* Pods_Tradelytics_TradelyticsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0004181799FD97459744FB69 /* Pods_Tradelytics_TradelyticsUITests.framework */; };
+		7B20267D91ACA90A584718C1 /* Pods_Tradelytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5DAE4FFAA52EBB7833E3ED /* Pods_Tradelytics.framework */; };
+		801E5F062384FF2C00030FFC /* TradeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E5F052384FF2C00030FFC /* TradeType.swift */; };
+		801E5F0A2385173E00030FFC /* ExitTradeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E5F092385173E00030FFC /* ExitTradeview.swift */; };
+		805A2F0C2383C311008D9FD7 /* OpenTradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A2F0B2383C311008D9FD7 /* OpenTradeView.swift */; };
+		805A2F0E2383C31C008D9FD7 /* CompletedTradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A2F0D2383C31C008D9FD7 /* CompletedTradeView.swift */; };
+		806BE3C8237FB6FB00A14EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3C7237FB6FB00A14EA2 /* AppDelegate.swift */; };
+		806BE3CA237FB6FB00A14EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3C9237FB6FB00A14EA2 /* SceneDelegate.swift */; };
+		806BE3CC237FB6FB00A14EA2 /* TradeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3CB237FB6FB00A14EA2 /* TradeListView.swift */; };
+		806BE3CE237FB6FE00A14EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806BE3CD237FB6FE00A14EA2 /* Assets.xcassets */; };
+		806BE3D1237FB6FE00A14EA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806BE3D0237FB6FE00A14EA2 /* Preview Assets.xcassets */; };
+		806BE3D4237FB6FE00A14EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806BE3D2237FB6FE00A14EA2 /* LaunchScreen.storyboard */; };
+		806BE3DF237FB6FE00A14EA2 /* TradelyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3DE237FB6FE00A14EA2 /* TradelyticsTests.swift */; };
+		806BE3EA237FB6FE00A14EA2 /* TradelyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3E9237FB6FE00A14EA2 /* TradelyticsUITests.swift */; };
+		806BE3F8237FB7A800A14EA2 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3F7237FB7A800A14EA2 /* Trade.swift */; };
+		806BE3FA237FB7B500A14EA2 /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BE3F9237FB7B500A14EA2 /* CurrencyPair.swift */; };
+		806F76DF2388B097002A9374 /* TradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76DE2388B097002A9374 /* TradeService.swift */; };
+		806F76E12388B8D3002A9374 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E02388B8D3002A9374 /* SessionStore.swift */; };
+		806F76E32388B8F0002A9374 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E22388B8F0002A9374 /* User.swift */; };
+		806F76E52388BDB5002A9374 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E42388BDB5002A9374 /* LoginView.swift */; };
+		80BAD614237FEA3100F45A04 /* TradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BAD613237FEA3100F45A04 /* TradeStore.swift */; };
+		80BAD6182380A88A00F45A04 /* CreateTradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BAD6172380A88A00F45A04 /* CreateTradeView.swift */; };
+		80BB660F2388AD3B00154765 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80BB660E2388AD3B00154765 /* GoogleService-Info.plist */; };
+		80BB66102388AD3B00154765 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80BB660E2388AD3B00154765 /* GoogleService-Info.plist */; };
+		80BB66112388AD3B00154765 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80BB660E2388AD3B00154765 /* GoogleService-Info.plist */; };
+		8DC8DD4A373CE232FFD2F940 /* Pods_TradelyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D0B419D240CBCEF683121A /* Pods_TradelyticsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		806BE3DB237FB6FE00A14EA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 806BE3BC237FB6FB00A14EA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BE3C3237FB6FB00A14EA2;
+			remoteInfo = Tradelytics;
+		};
+		806BE3E6237FB6FE00A14EA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 806BE3BC237FB6FB00A14EA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BE3C3237FB6FB00A14EA2;
+			remoteInfo = Tradelytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0004181799FD97459744FB69 /* Pods_Tradelytics_TradelyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradelytics_TradelyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BC1D1EDEA01A7D2C3D11D5 /* Pods-Tradelytics-TradelyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradelytics-TradelyticsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FFDD06125931BAB429821AA /* Pods-Tradelytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradelytics.release.xcconfig"; path = "Target Support Files/Pods-Tradelytics/Pods-Tradelytics.release.xcconfig"; sourceTree = "<group>"; };
+		60B9B115CEBD336A4472DA17 /* Pods-Tradelytics-TradelyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradelytics-TradelyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67D0B419D240CBCEF683121A /* Pods_TradelyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradelyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5DAE4FFAA52EBB7833E3ED /* Pods_Tradelytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradelytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801E5F052384FF2C00030FFC /* TradeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeType.swift; sourceTree = "<group>"; };
+		801E5F092385173E00030FFC /* ExitTradeview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitTradeview.swift; sourceTree = "<group>"; };
+		805A2F0B2383C311008D9FD7 /* OpenTradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTradeView.swift; sourceTree = "<group>"; };
+		805A2F0D2383C31C008D9FD7 /* CompletedTradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTradeView.swift; sourceTree = "<group>"; };
+		806BE3C4237FB6FB00A14EA2 /* Tradelytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradelytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BE3C7237FB6FB00A14EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		806BE3C9237FB6FB00A14EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		806BE3CB237FB6FB00A14EA2 /* TradeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeListView.swift; sourceTree = "<group>"; };
+		806BE3CD237FB6FE00A14EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		806BE3D0237FB6FE00A14EA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		806BE3D3237FB6FE00A14EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		806BE3D5237FB6FE00A14EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BE3DA237FB6FE00A14EA2 /* TradelyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradelyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BE3DE237FB6FE00A14EA2 /* TradelyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradelyticsTests.swift; sourceTree = "<group>"; };
+		806BE3E0237FB6FE00A14EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BE3E5237FB6FE00A14EA2 /* TradelyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradelyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BE3E9237FB6FE00A14EA2 /* TradelyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradelyticsUITests.swift; sourceTree = "<group>"; };
+		806BE3EB237FB6FE00A14EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BE3F7237FB7A800A14EA2 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		806BE3F9237FB7B500A14EA2 /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
+		806F76DE2388B097002A9374 /* TradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeService.swift; sourceTree = "<group>"; };
+		806F76E02388B8D3002A9374 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		806F76E22388B8F0002A9374 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		806F76E42388BDB5002A9374 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		80BAD613237FEA3100F45A04 /* TradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeStore.swift; sourceTree = "<group>"; };
+		80BAD6172380A88A00F45A04 /* CreateTradeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTradeView.swift; sourceTree = "<group>"; };
+		80BB660E2388AD3B00154765 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFC09172E2440090C8E53C94 /* Pods-TradelyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradelyticsTests.debug.xcconfig"; path = "Target Support Files/Pods-TradelyticsTests/Pods-TradelyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2CA8AC5729183D4E6F6DC21 /* Pods-TradelyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradelyticsTests.release.xcconfig"; path = "Target Support Files/Pods-TradelyticsTests/Pods-TradelyticsTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6DB4909EA3EF0FF6553C386 /* Pods-Tradelytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradelytics.debug.xcconfig"; path = "Target Support Files/Pods-Tradelytics/Pods-Tradelytics.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		806BE3C1237FB6FB00A14EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B20267D91ACA90A584718C1 /* Pods_Tradelytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3D7237FB6FE00A14EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC8DD4A373CE232FFD2F940 /* Pods_TradelyticsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3E2237FB6FE00A14EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060E8149B3408141A059A5F0 /* Pods_Tradelytics_TradelyticsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		806BE3BB237FB6FB00A14EA2 = {
+			isa = PBXGroup;
+			children = (
+				806BE3C6237FB6FB00A14EA2 /* Tradelytics */,
+				806BE3DD237FB6FE00A14EA2 /* TradelyticsTests */,
+				806BE3E8237FB6FE00A14EA2 /* TradelyticsUITests */,
+				806BE3C5237FB6FB00A14EA2 /* Products */,
+				B14364D5988646BCF3A18C98 /* Pods */,
+				B51F28A1A62A493A193F48DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		806BE3C5237FB6FB00A14EA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3C4237FB6FB00A14EA2 /* Tradelytics.app */,
+				806BE3DA237FB6FE00A14EA2 /* TradelyticsTests.xctest */,
+				806BE3E5237FB6FE00A14EA2 /* TradelyticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		806BE3C6237FB6FB00A14EA2 /* Tradelytics */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3C7237FB6FB00A14EA2 /* AppDelegate.swift */,
+				806BE3FB237FB7C600A14EA2 /* Model */,
+				806BE3FD237FB7D700A14EA2 /* View */,
+				806BE3CD237FB6FE00A14EA2 /* Assets.xcassets */,
+				806BE3D2237FB6FE00A14EA2 /* LaunchScreen.storyboard */,
+				806BE3D5237FB6FE00A14EA2 /* Info.plist */,
+				80BB660E2388AD3B00154765 /* GoogleService-Info.plist */,
+				806BE3CF237FB6FE00A14EA2 /* Preview Content */,
+			);
+			path = Tradelytics;
+			sourceTree = "<group>";
+		};
+		806BE3CF237FB6FE00A14EA2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3D0237FB6FE00A14EA2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		806BE3DD237FB6FE00A14EA2 /* TradelyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3DE237FB6FE00A14EA2 /* TradelyticsTests.swift */,
+				806BE3E0237FB6FE00A14EA2 /* Info.plist */,
+			);
+			path = TradelyticsTests;
+			sourceTree = "<group>";
+		};
+		806BE3E8237FB6FE00A14EA2 /* TradelyticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3E9237FB6FE00A14EA2 /* TradelyticsUITests.swift */,
+				806BE3EB237FB6FE00A14EA2 /* Info.plist */,
+			);
+			path = TradelyticsUITests;
+			sourceTree = "<group>";
+		};
+		806BE3FB237FB7C600A14EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				806BE3F9237FB7B500A14EA2 /* CurrencyPair.swift */,
+				806BE3F7237FB7A800A14EA2 /* Trade.swift */,
+				801E5F052384FF2C00030FFC /* TradeType.swift */,
+				806F76E22388B8F0002A9374 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		806BE3FD237FB7D700A14EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80BAD6172380A88A00F45A04 /* CreateTradeView.swift */,
+				801E5F092385173E00030FFC /* ExitTradeview.swift */,
+				805A2F0D2383C31C008D9FD7 /* CompletedTradeView.swift */,
+				805A2F0B2383C311008D9FD7 /* OpenTradeView.swift */,
+				806BE3CB237FB6FB00A14EA2 /* TradeListView.swift */,
+				806BE3C9237FB6FB00A14EA2 /* SceneDelegate.swift */,
+				806F76DE2388B097002A9374 /* TradeService.swift */,
+				80BAD613237FEA3100F45A04 /* TradeStore.swift */,
+				806F76E42388BDB5002A9374 /* LoginView.swift */,
+				806F76E02388B8D3002A9374 /* SessionStore.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B14364D5988646BCF3A18C98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6DB4909EA3EF0FF6553C386 /* Pods-Tradelytics.debug.xcconfig */,
+				3FFDD06125931BAB429821AA /* Pods-Tradelytics.release.xcconfig */,
+				22BC1D1EDEA01A7D2C3D11D5 /* Pods-Tradelytics-TradelyticsUITests.debug.xcconfig */,
+				60B9B115CEBD336A4472DA17 /* Pods-Tradelytics-TradelyticsUITests.release.xcconfig */,
+				AFC09172E2440090C8E53C94 /* Pods-TradelyticsTests.debug.xcconfig */,
+				C2CA8AC5729183D4E6F6DC21 /* Pods-TradelyticsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B51F28A1A62A493A193F48DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B5DAE4FFAA52EBB7833E3ED /* Pods_Tradelytics.framework */,
+				0004181799FD97459744FB69 /* Pods_Tradelytics_TradelyticsUITests.framework */,
+				67D0B419D240CBCEF683121A /* Pods_TradelyticsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		806BE3C3237FB6FB00A14EA2 /* Tradelytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BE3EE237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "Tradelytics" */;
+			buildPhases = (
+				217D42C501F0CC2BF5C9A63B /* [CP] Check Pods Manifest.lock */,
+				806BE3C0237FB6FB00A14EA2 /* Sources */,
+				806BE3C1237FB6FB00A14EA2 /* Frameworks */,
+				806BE3C2237FB6FB00A14EA2 /* Resources */,
+				55F59625A6CE179AEDA47C4A /* [CP] Embed Pods Frameworks */,
+				13E78056391E52C320BE2DF0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tradelytics;
+			productName = Tradelytics;
+			productReference = 806BE3C4237FB6FB00A14EA2 /* Tradelytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		806BE3D9237FB6FE00A14EA2 /* TradelyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BE3F1237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "TradelyticsTests" */;
+			buildPhases = (
+				A61E01BA3020F0A17E5381B1 /* [CP] Check Pods Manifest.lock */,
+				806BE3D6237FB6FE00A14EA2 /* Sources */,
+				806BE3D7237FB6FE00A14EA2 /* Frameworks */,
+				806BE3D8237FB6FE00A14EA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BE3DC237FB6FE00A14EA2 /* PBXTargetDependency */,
+			);
+			name = TradelyticsTests;
+			productName = TradelyticsTests;
+			productReference = 806BE3DA237FB6FE00A14EA2 /* TradelyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		806BE3E4237FB6FE00A14EA2 /* TradelyticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BE3F4237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "TradelyticsUITests" */;
+			buildPhases = (
+				E7A3538C43085DBFCFCA2A24 /* [CP] Check Pods Manifest.lock */,
+				806BE3E1237FB6FE00A14EA2 /* Sources */,
+				806BE3E2237FB6FE00A14EA2 /* Frameworks */,
+				806BE3E3237FB6FE00A14EA2 /* Resources */,
+				7CF8FD0273481889AA92A166 /* [CP] Embed Pods Frameworks */,
+				ACF7D6A66C2C17A1768F7E79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BE3E7237FB6FE00A14EA2 /* PBXTargetDependency */,
+			);
+			name = TradelyticsUITests;
+			productName = TradelyticsUITests;
+			productReference = 806BE3E5237FB6FE00A14EA2 /* TradelyticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		806BE3BC237FB6FB00A14EA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = chrisrvillanueva;
+				TargetAttributes = {
+					806BE3C3237FB6FB00A14EA2 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					806BE3D9237FB6FE00A14EA2 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 806BE3C3237FB6FB00A14EA2;
+					};
+					806BE3E4237FB6FE00A14EA2 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 806BE3C3237FB6FB00A14EA2;
+					};
+				};
+			};
+			buildConfigurationList = 806BE3BF237FB6FB00A14EA2 /* Build configuration list for PBXProject "Tradelytics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 806BE3BB237FB6FB00A14EA2;
+			productRefGroup = 806BE3C5237FB6FB00A14EA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				806BE3C3237FB6FB00A14EA2 /* Tradelytics */,
+				806BE3D9237FB6FE00A14EA2 /* TradelyticsTests */,
+				806BE3E4237FB6FE00A14EA2 /* TradelyticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		806BE3C2237FB6FB00A14EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BE3D4237FB6FE00A14EA2 /* LaunchScreen.storyboard in Resources */,
+				80BB660F2388AD3B00154765 /* GoogleService-Info.plist in Resources */,
+				806BE3D1237FB6FE00A14EA2 /* Preview Assets.xcassets in Resources */,
+				806BE3CE237FB6FE00A14EA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3D8237FB6FE00A14EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB66102388AD3B00154765 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3E3237FB6FE00A14EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB66112388AD3B00154765 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13E78056391E52C320BE2DF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		217D42C501F0CC2BF5C9A63B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tradelytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55F59625A6CE179AEDA47C4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tradelytics/Pods-Tradelytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF8FD0273481889AA92A166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A61E01BA3020F0A17E5381B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradelyticsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF7D6A66C2C17A1768F7E79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tradelytics-TradelyticsUITests/Pods-Tradelytics-TradelyticsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A3538C43085DBFCFCA2A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tradelytics-TradelyticsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		806BE3C0237FB6FB00A14EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806F76E12388B8D3002A9374 /* SessionStore.swift in Sources */,
+				801E5F062384FF2C00030FFC /* TradeType.swift in Sources */,
+				806BE3C8237FB6FB00A14EA2 /* AppDelegate.swift in Sources */,
+				806F76E52388BDB5002A9374 /* LoginView.swift in Sources */,
+				80BAD6182380A88A00F45A04 /* CreateTradeView.swift in Sources */,
+				806BE3CA237FB6FB00A14EA2 /* SceneDelegate.swift in Sources */,
+				805A2F0C2383C311008D9FD7 /* OpenTradeView.swift in Sources */,
+				806F76E32388B8F0002A9374 /* User.swift in Sources */,
+				80BAD614237FEA3100F45A04 /* TradeStore.swift in Sources */,
+				806F76DF2388B097002A9374 /* TradeService.swift in Sources */,
+				806BE3FA237FB7B500A14EA2 /* CurrencyPair.swift in Sources */,
+				806BE3F8237FB7A800A14EA2 /* Trade.swift in Sources */,
+				806BE3CC237FB6FB00A14EA2 /* TradeListView.swift in Sources */,
+				801E5F0A2385173E00030FFC /* ExitTradeview.swift in Sources */,
+				805A2F0E2383C31C008D9FD7 /* CompletedTradeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3D6237FB6FE00A14EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BE3DF237FB6FE00A14EA2 /* TradelyticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BE3E1237FB6FE00A14EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BE3EA237FB6FE00A14EA2 /* TradelyticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		806BE3DC237FB6FE00A14EA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BE3C3237FB6FB00A14EA2 /* Tradelytics */;
+			targetProxy = 806BE3DB237FB6FE00A14EA2 /* PBXContainerItemProxy */;
+		};
+		806BE3E7237FB6FE00A14EA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BE3C3237FB6FB00A14EA2 /* Tradelytics */;
+			targetProxy = 806BE3E6237FB6FE00A14EA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		806BE3D2237FB6FE00A14EA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				806BE3D3237FB6FE00A14EA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		806BE3EC237FB6FE00A14EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		806BE3ED237FB6FE00A14EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		806BE3EF237FB6FE00A14EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6DB4909EA3EF0FF6553C386 /* Pods-Tradelytics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tradelytics/Preview Content\"";
+				DEVELOPMENT_TEAM = BMLYZWR33S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tradelytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.Tradelytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		806BE3F0237FB6FE00A14EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFDD06125931BAB429821AA /* Pods-Tradelytics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tradelytics/Preview Content\"";
+				DEVELOPMENT_TEAM = BMLYZWR33S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tradelytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.Tradelytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		806BE3F2237FB6FE00A14EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC09172E2440090C8E53C94 /* Pods-TradelyticsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradelyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.TradelyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tradelytics.app/Tradelytics";
+			};
+			name = Debug;
+		};
+		806BE3F3237FB6FE00A14EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CA8AC5729183D4E6F6DC21 /* Pods-TradelyticsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradelyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.TradelyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tradelytics.app/Tradelytics";
+			};
+			name = Release;
+		};
+		806BE3F5237FB6FE00A14EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BC1D1EDEA01A7D2C3D11D5 /* Pods-Tradelytics-TradelyticsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradelyticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.TradelyticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tradelytics;
+			};
+			name = Debug;
+		};
+		806BE3F6237FB6FE00A14EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B9B115CEBD336A4472DA17 /* Pods-Tradelytics-TradelyticsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradelyticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisrvillanueva.TradelyticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tradelytics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		806BE3BF237FB6FB00A14EA2 /* Build configuration list for PBXProject "Tradelytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BE3EC237FB6FE00A14EA2 /* Debug */,
+				806BE3ED237FB6FE00A14EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BE3EE237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "Tradelytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BE3EF237FB6FE00A14EA2 /* Debug */,
+				806BE3F0237FB6FE00A14EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BE3F1237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "TradelyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BE3F2237FB6FE00A14EA2 /* Debug */,
+				806BE3F3237FB6FE00A14EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BE3F4237FB6FE00A14EA2 /* Build configuration list for PBXNativeTarget "TradelyticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BE3F5237FB6FE00A14EA2 /* Debug */,
+				806BE3F6237FB6FE00A14EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 806BE3BC237FB6FB00A14EA2 /* Project object */;
+}
