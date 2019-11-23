@@ -1,0 +1,6 @@
+framework module Pods_Tradelytics_TradelyticsUITests {
+  umbrella header "Pods-Tradelytics-TradelyticsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

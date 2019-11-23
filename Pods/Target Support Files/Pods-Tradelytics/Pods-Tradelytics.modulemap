@@ -1,0 +1,6 @@
+framework module Pods_Tradelytics {
+  umbrella header "Pods-Tradelytics-umbrella.h"
+
+  export *
+  module * { export * }
+}
