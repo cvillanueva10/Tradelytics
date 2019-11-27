@@ -31,6 +31,7 @@ struct ExitTradeView: View {
     var body: some View {
         Form {
             Text(trade.pair.rawValue)
+            Text("Entry Price: \(trade.entryPrice.description)")
             HStack(spacing: 16) {
                 Text("Exit Price")
                 DecimalField(label: "Enter price", value: $exitPrice, formatter: numberFormatter)

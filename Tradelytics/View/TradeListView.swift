@@ -8,6 +8,17 @@
 
 import SwiftUI
 
+struct HistoryListView: View {
+    
+    @EnvironmentObject var store: TradeStore
+    
+    var body: some View {
+        ForEach(store.completedTrades) { trade in
+            CompletedTradeView(trade: trade)
+        }
+    }
+}
+
 struct TradeListView: View {
     
     @EnvironmentObject var session: SessionStore
@@ -41,9 +52,7 @@ struct TradeListView: View {
                                 }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                             }
                             Section(header: Text("History")) {
-                                ForEach(store.completedTrades) { trade in
-                                    CompletedTradeView(trade: trade)
-                                }
+                                HistoryListView()
                             }
                         }
                         .listStyle(GroupedListStyle())
