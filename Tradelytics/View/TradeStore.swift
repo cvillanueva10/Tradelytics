@@ -20,7 +20,6 @@ class TradeStore : ObservableObject {
     }
 
     func fetchTrades() {
-        
         service.fetchTrades { openTrades, completedTrades in
             self.openTrades = openTrades
             self.completedTrades = completedTrades
@@ -41,6 +40,11 @@ class TradeStore : ObservableObject {
         service.update(trade: trade) {
             self.fetchTrades()
         }
-        
+    }
+    
+    func cancel(trade: Trade) {
+        service.delete(trade: trade) {
+            self.fetchTrades()
+        }
     }
 }

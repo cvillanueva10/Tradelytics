@@ -30,7 +30,8 @@ class TradeService {
             "exit_price" : NSNull(),
             "type" : trade.type.rawValue,
             "method": trade.method,
-            "is_completed": trade.isCompleted
+            "is_completed": trade.isCompleted,
+            "net_pips": trade.netPips
         ])
     }
     
@@ -47,6 +48,7 @@ class TradeService {
             guard let exitDate = trade.exitDate else { return nil }
             transaction.updateData(["exit_price": trade.exitPrice as Any,
                                     "exit_date" : Timestamp(date: exitDate),
+                                    "net_pips" : trade.netPips as Any,
                                     "is_completed": true], forDocument: tradeReference)
             return nil
         }) { response, error in
@@ -55,6 +57,19 @@ class TradeService {
             }
             completion()
         }
+    }
+    
+    func delete(trade: Trade, completion: @escaping () -> ()) {
+        guard let userId = session.getUserId() else { return }
+        db.collection("users").document(userId).collection("trades").document(trade.id).delete { error in
+            if let error = error {
+                // Alert View
+                print(error)
+            }
+            // Success View
+            completion()
+        }
+        
     }
     
     func fetchTrades(completion: @escaping (([Trade], [Trade]) -> ())) {

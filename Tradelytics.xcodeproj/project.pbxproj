@@ -27,6 +27,8 @@
 		806F76E12388B8D3002A9374 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E02388B8D3002A9374 /* SessionStore.swift */; };
 		806F76E32388B8F0002A9374 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E22388B8F0002A9374 /* User.swift */; };
 		806F76E52388BDB5002A9374 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F76E42388BDB5002A9374 /* LoginView.swift */; };
+		80A02161238DF5B600516428 /* PipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A02160238DF5B600516428 /* PipCalculator.swift */; };
+		80A02163238DF66200516428 /* PipCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A02162238DF66200516428 /* PipCalculatorTest.swift */; };
 		80BAD614237FEA3100F45A04 /* TradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BAD613237FEA3100F45A04 /* TradeStore.swift */; };
 		80BAD6182380A88A00F45A04 /* CreateTradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BAD6172380A88A00F45A04 /* CreateTradeView.swift */; };
 		80BB660F2388AD3B00154765 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80BB660E2388AD3B00154765 /* GoogleService-Info.plist */; };
@@ -83,6 +85,8 @@
 		806F76E02388B8D3002A9374 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		806F76E22388B8F0002A9374 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		806F76E42388BDB5002A9374 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		80A02160238DF5B600516428 /* PipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipCalculator.swift; sourceTree = "<group>"; };
+		80A02162238DF66200516428 /* PipCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipCalculatorTest.swift; sourceTree = "<group>"; };
 		80BAD613237FEA3100F45A04 /* TradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeStore.swift; sourceTree = "<group>"; };
 		80BAD6172380A88A00F45A04 /* CreateTradeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTradeView.swift; sourceTree = "<group>"; };
 		80BB660E2388AD3B00154765 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		806BE3DD237FB6FE00A14EA2 /* TradelyticsTests */ = {
 			isa = PBXGroup;
 			children = (
+				80A02162238DF66200516428 /* PipCalculatorTest.swift */,
 				806BE3DE237FB6FE00A14EA2 /* TradelyticsTests.swift */,
 				806BE3E0237FB6FE00A14EA2 /* Info.plist */,
 			);
@@ -196,16 +201,17 @@
 		806BE3FD237FB7D700A14EA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				805A2F0D2383C31C008D9FD7 /* CompletedTradeView.swift */,
 				80BAD6172380A88A00F45A04 /* CreateTradeView.swift */,
 				801E5F092385173E00030FFC /* ExitTradeview.swift */,
-				805A2F0D2383C31C008D9FD7 /* CompletedTradeView.swift */,
+				806F76E42388BDB5002A9374 /* LoginView.swift */,
 				805A2F0B2383C311008D9FD7 /* OpenTradeView.swift */,
-				806BE3CB237FB6FB00A14EA2 /* TradeListView.swift */,
+				80A02160238DF5B600516428 /* PipCalculator.swift */,
 				806BE3C9237FB6FB00A14EA2 /* SceneDelegate.swift */,
+				806F76E02388B8D3002A9374 /* SessionStore.swift */,
+				806BE3CB237FB6FB00A14EA2 /* TradeListView.swift */,
 				806F76DE2388B097002A9374 /* TradeService.swift */,
 				80BAD613237FEA3100F45A04 /* TradeStore.swift */,
-				806F76E42388BDB5002A9374 /* LoginView.swift */,
-				806F76E02388B8D3002A9374 /* SessionStore.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806F76E12388B8D3002A9374 /* SessionStore.swift in Sources */,
+				80A02161238DF5B600516428 /* PipCalculator.swift in Sources */,
 				801E5F062384FF2C00030FFC /* TradeType.swift in Sources */,
 				806BE3C8237FB6FB00A14EA2 /* AppDelegate.swift in Sources */,
 				806F76E52388BDB5002A9374 /* LoginView.swift in Sources */,
@@ -534,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806BE3DF237FB6FE00A14EA2 /* TradelyticsTests.swift in Sources */,
+				80A02163238DF66200516428 /* PipCalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

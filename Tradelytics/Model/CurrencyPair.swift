@@ -41,6 +41,7 @@ enum CurrencyPair: String {
     case usdjpy = "USDJPY"
     case xagusd = "XAGUSD"
     case xauusd = "XAUUSD"
+    case usOil = "USOIL"
 }
 
 extension CurrencyPair: CaseIterable {

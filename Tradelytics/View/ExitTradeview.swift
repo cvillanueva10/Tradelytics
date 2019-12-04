@@ -15,6 +15,7 @@ struct ExitTradeView: View {
     @State var exitPrice: Decimal? = nil
     let trade: Trade
     var didCloseTrade: (Trade) -> ()
+    var didCancelTrade: (Trade) -> ()
     
     private var numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -23,9 +24,10 @@ struct ExitTradeView: View {
         return formatter
     }()
     
-    init(trade: Trade, didCloseTrade: @escaping (Trade) -> ()) {
+    init(trade: Trade, didCloseTrade: @escaping (Trade) -> (), didCancelTrade: @escaping (Trade) -> ()) {
         self.trade = trade
         self.didCloseTrade = didCloseTrade
+        self.didCancelTrade = didCancelTrade
     }
     
     var body: some View {
@@ -43,6 +45,12 @@ struct ExitTradeView: View {
                 self.mode.wrappedValue.dismiss()
             }) {
                 Text("Close Trade")
+            }
+            Spacer()
+            Button(action: {
+                
+            }) {
+                Text("Cancel Trade")
             }
         }
     }

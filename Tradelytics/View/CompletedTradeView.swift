@@ -20,7 +20,7 @@ struct CompletedTradeView: View {
             HStack(spacing: 15) {
                 Text(trade.pair.rawValue)
                     .multilineTextAlignment(.leading)
-                Text("100 Pips")
+                Text("\(trade.netPips.description) Pips")
                 Text(dateFormatter.string(from: trade.entryDate))
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }

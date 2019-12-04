@@ -19,6 +19,9 @@ class Trade: Identifiable {
     let pair: CurrencyPair
     let type: TradeType
     let method: String
+    var netPips: Double = 0
+    
+    private let pipCalculator = PipCalculator()
     
     private var numberFormatter: NumberFormatter = {
            let formatter = NumberFormatter()
@@ -39,13 +42,16 @@ class Trade: Identifiable {
     init(id: String, data: [String: Any]) {
         self.id = id
         self.entryDate = (data["entry_date"] as! Timestamp).dateValue()
-        self.entryPrice = (data["entry_price"] as! NSNumber).decimalValue
+        self.entryPrice = (data["entry_price"] as! NSNumber).decimalValue.rounded(toPlaces: 5)
         self.pair = CurrencyPair(rawValue: data["pair"] as! String)!
+        if let netPips = data["net_pips"] as? NSNumber {
+            self.netPips = netPips.doubleValue
+        }
         if let exitDate = data["exit_date"] as? Timestamp {
             self.exitDate = exitDate.dateValue()
         }
         if let exitPrice = data["exit_price"] as? Decimal {
-            self.exitPrice = exitPrice
+            self.exitPrice = exitPrice.rounded(toPlaces: 5)
         }
         self.type = TradeType(rawValue: data["type"] as! String)!
         self.method = data["method"] as! String
@@ -54,5 +60,17 @@ class Trade: Identifiable {
     func closeTrade(with price: Decimal) {
         exitPrice = price
         exitDate = Date()
+        let entryAsDouble = Double(truncating: entryPrice as NSNumber)
+        let exitAsDouble = Double(truncating: price as NSNumber)
+        netPips = pipCalculator.calculatePips(for: pair, tradeType: type, entry: entryAsDouble, exit: exitAsDouble)
+    }
+}
+
+extension Decimal {
+    func rounded(toPlaces places:Int) -> Decimal {
+        let doubleVal = (self as NSNumber).doubleValue
+        let divisor = pow(10.0, Double(places))
+        let doubleResult = (doubleVal * divisor).rounded() / divisor
+        return (doubleResult as NSNumber).decimalValue
     }
 }

@@ -37,6 +37,8 @@ struct TradeListView: View {
                                 ForEach(store.openTrades) { trade in
                                     NavigationLink(destination: ExitTradeView(trade: trade, didCloseTrade: { trade in
                                         self.store.close(trade: trade)
+                                    }, didCancelTrade: { trade in
+                                        self.store.cancel(trade: trade)
                                     })) {
                                         OpenTradeView(trade: trade)
                                     }
